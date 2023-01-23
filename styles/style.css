@@ -17,23 +17,27 @@
 
 /* Common Style */
 
-*{
+* {
     font-family: var(--secondary-font);
     box-sizing: border-box;
 }
 
-.btn--primary-color{
+.btn--primary-color {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
-.btn--primary-color:hover{
+.btn--primary-color:hover {
     background-color: transparent;
     color: var(--primary-color) !important;
     border-color: var(--primary-color);
 }
 
-.mt__120{
+.primary-font {
+    font-family: var(--primary-font);
+}
+
+.mt__120 {
     margin-top: 120px;
 }
 
@@ -54,3 +58,23 @@
 }
 
 
+/* Banner Style Starts */
+
+.banner .banner__wrapper {
+    padding: 104px 0;
+    background-image: url('../images/Rectangle-4.png'), linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+    ;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.banner__intro {
+    max-width: 692px;
+}
+
+.banner__intro .section__text {
+    color: #E7E7E7;
+}
+
+/* Banner Style Ends */
