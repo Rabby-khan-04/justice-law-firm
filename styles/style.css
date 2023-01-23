@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 
-img{
+img {
     display: inline-block;
 }
 
@@ -41,7 +41,7 @@ img{
     font-family: var(--primary-font);
 }
 
-.title__color{
+.title__color {
     color: var(--title-color);
 }
 
@@ -90,11 +90,11 @@ img{
 
 /* Practice Area Style Starts */
 
-.bg__gradient{
+.bg__gradient {
     background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
 }
 
-.practice-area__wrapper > div{
+.practice-area__wrapper>div {
     padding: 56px 70px 70px;
 }
 
@@ -103,7 +103,7 @@ img{
 
 /* Testimonial Section Style Starts */
 
-.review{
+.review {
     background: rgba(17, 17, 17, 0.8);
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,14 +111,39 @@ img{
     padding: 96px 135px;
     background-blend-mode: multiply;
 }
-.review-1{
+
+.review-1 {
     background-image: url('../images/review-bg-1.jpg');
 }
-.review-2{
+
+.review-2 {
     background-image: url('../images/review-bg-2.jpg');
 }
-.review-3{
+
+.review-3 {
     background-image: url('../images/review-bg-3.jpg');
 }
 
 /* Testimonial Section Style Ends */
+
+
+
+/* FAQ Section Style Starts */
+
+.faq__title {
+    font-size: 24px !important;
+    color: var(--title-color) !important;
+}
+
+.accordion-button[aria-expanded="true"],
+.faq .accordion-button, 
+.faq .accordion-body {
+    background: #F3F3F3 !important;
+    outline: none !important;
+}
+
+.faq {
+    border: none !important;
+}
+
+/* FAQ Section Style Ends */
