@@ -147,3 +147,19 @@ img {
 }
 
 /* FAQ Section Style Ends */
+
+
+
+/* Contact Section Style Starts */
+
+.contact__info__box{
+    padding: 65px;
+    background-color: #F3F3F3;
+}
+
+.contact_form .form-control{
+    background-color: #F3F3F3;
+    border: none;
+}
+
+/* Contact Section Style Ends */
