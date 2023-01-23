@@ -99,3 +99,26 @@ img{
 }
 
 /* Practice Area Style Ends */
+
+
+/* Testimonial Section Style Starts */
+
+.review{
+    background: rgba(17, 17, 17, 0.8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 96px 135px;
+    background-blend-mode: multiply;
+}
+.review-1{
+    background-image: url('../images/review-bg-1.jpg');
+}
+.review-2{
+    background-image: url('../images/review-bg-2.jpg');
+}
+.review-3{
+    background-image: url('../images/review-bg-3.jpg');
+}
+
+/* Testimonial Section Style Ends */
