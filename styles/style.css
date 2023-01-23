@@ -22,6 +22,10 @@
     box-sizing: border-box;
 }
 
+img{
+    display: inline-block;
+}
+
 .btn--primary-color {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -35,6 +39,10 @@
 
 .primary-font {
     font-family: var(--primary-font);
+}
+
+.title__color{
+    color: var(--title-color);
 }
 
 .mt__120 {
@@ -63,13 +71,13 @@
 .banner .banner__wrapper {
     padding: 104px 0;
     background-image: url('../images/Rectangle-4.png'), linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
-    ;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
 }
 
-.banner__intro {
+.intro {
     max-width: 692px;
 }
 
@@ -78,3 +86,16 @@
 }
 
 /* Banner Style Ends */
+
+
+/* Practice Area Style Starts */
+
+.bg__gradient{
+    background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
+}
+
+.practice-area__wrapper > div{
+    padding: 56px 70px 70px;
+}
+
+/* Practice Area Style Ends */
