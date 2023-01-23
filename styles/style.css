@@ -1,0 +1,56 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* root CSS  */
+
+:root {
+    --primary-font: 'EB Garamond', serif;
+    --secondary-font: 'Poppins', sans-serif;
+    --primary-color: #B68C5A;
+    --title-color: #414040;
+    --light-gray: #E7E7E7;
+    --dark-gray: #707070;
+}
+
+
+/* Common Style */
+
+*{
+    font-family: var(--secondary-font);
+    box-sizing: border-box;
+}
+
+.btn--primary-color{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn--primary-color:hover{
+    background-color: transparent;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color);
+}
+
+.mt__120{
+    margin-top: 120px;
+}
+
+.section__title {
+    font-family: var(--primary-font);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 52px;
+    color: var(--title-color);
+}
+
+.section__text {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--dark-gray);
+}
+
+
