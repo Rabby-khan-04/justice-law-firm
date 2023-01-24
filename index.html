@@ -23,7 +23,7 @@
 
     <!-- Nva Bar Starts -->
 
-    <nav class="navbar navbar-expand-md container-lg bg-white py-5">
+    <nav class="navbar navbar-expand-lg container-lg bg-white py-lg-5 py-4">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="images/site_logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -65,15 +65,39 @@
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <h1 class="modal-title fs-5 primary-font" id="exampleModalLabel">Request a quote</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn text-white fw-semibold btn--primary-color">Save changes</button>
+                  <form>
+                    <img class="mb-4" src="images/site_logo.png" alt="">
+                    <h1 class="h3 mb-3 fw-normal">Please Fill The Form</h1>
+
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control section__text" id="floatingName" placeholder="Enter Your Name">
+                      <label for="floatingName">Your Full Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control section__text" id="floatingEmail" placeholder="name@example.com">
+                      <label for="floatingEmail">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="tel" class="form-control section__text" id="floatingNumber" placeholder="Enter Your Phone Number">
+                      <label for="floatingNumber">Phone Number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control section__text" id="floatingSubject" placeholder="Subject">
+                      <label for="floatingSubject">Subject</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control section__text p-4" id="floatingMessage" placeholder="Your Message"></textarea>
+                      <label for="floatingMessage">Your Message</label>
+                    </div>
+                    <div class="submit__btn">
+                      <button type="submit" class="btn text-white fw-semibold w-100 px-4 py-3 btn--primary-color">Send</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -88,7 +112,7 @@
     <!-- Banner Section Starts -->
 
     <section class="banner">
-      <div class="container-lg banner__wrapper rounded-3">
+      <div class="container-lg banner__wrapper rounded-3 px-md-0 px-3">
         <div class="banner__intro intro text-center mx-auto">
           <h1 class="display-2 text-white fw-bolder primary-font mb-4">We Provide Effective Legal Solutions</h1>
           <p class="section__text mb-4">At Justice Legal Solutions, our aim is to help you achieve the best possible
@@ -96,13 +120,17 @@
 
           <!-- Search Form -->
           <form>
-            <div class="input-group">
-              <input type="text" class="form-control py-3 px-4 d-inline-block rounded-2"
-                placeholder="Search your services">
-              <span class="input-group-btn">
-                <button class="btn py-3 px-5 text-white fw-semibold btn--primary-color d-inline-block ms-4"
+            <div class="row gap-3 gap-sm-0">
+
+              <div class="col-sm-7 col-md-9 col-12">
+                <input type="text" class="form-control py-3 px-4 rounded-2 d-block" placeholder="Search your services">
+              </div>
+
+              <div class="col-sm-5 col-md-3 col-12">
+                <button class="btn py-3 px-5 text-white fw-semibold btn--primary-color w-100 "
                   type="submit">Search</button>
-              </span>
+              </div>
+
             </div>
           </form>
 
@@ -117,376 +145,391 @@
   <!-- Header Section Ends -->
 
 
-  <!-- Practice Area Starts -->
+  <!-- Main Area Starts -->
+  <main>
+    <!-- Practice Area Starts -->
 
-  <section class="mt__120 practice-area">
-    <div class="container-lg">
+    <section class="mt__120 practice-area">
+      <div class="container-lg">
 
-      <!-- Section Intro -->
-      <div class="intro mx-auto text-center mb-5">
-        <h2 class="section__title mb-4">The Legal Practice Area</h2>
-        <p class="section__text mb-3">We offer practical legal solutions to businesses and individuals of all sizes. We
-          can advise on all aspects of commercial work, acting for a wide range of business sizes</p>
+        <!-- Section Intro -->
+        <div class="intro mx-auto text-center mb-5">
+          <h2 class="section__title mb-4">The Legal Practice Area</h2>
+          <p class="section__text mb-3">We offer practical legal solutions to businesses and individuals of all sizes.
+            We
+            can advise on all aspects of commercial work, acting for a wide range of business sizes</p>
+        </div>
+
+        <!-- Practice Area section -->
+        <div class="practice-area__wrapper row">
+
+          <!-- Single Practice Area -1  -->
+          <div class="col-lg-4 col-md-6 col-12 text-center border-bottom border-end border-light">
+            <img src="images/box-ico-1.png" alt="" class="mb-4">
+            <h4 class="h2 title__color mb-4 primary-font">Business Law</h4>
+            <p class="section__text">Every business, whether a start-up, or established business is going to need legal
+              advice at some stage. So you’re going to need specialist business lawyers you can trust. </p>
+            <img src="images/rounded-r-arrow.png" alt="">
+          </div>
+
+          <!-- Single Practice Area -2 -->
+          <div class="col-lg-4 col-md-6 col-12 text-center bg__gradient border-bottom border-end border-light">
+            <img src="images/box-ico-2.png" alt="" class="mb-4">
+            <h4 class="h2 title__color mb-4 primary-font">Criminal Law</h4>
+            <p class="section__text">Criminal law is the body of law that relates to crime. It prescribes conduct
+              perceived as threatening, harmful, or otherwise endangering to the property, health, safety.</p>
+            <img src="images/rounded-r-arrow.png" alt="">
+          </div>
+
+          <!-- Single Practice Area -3 -->
+          <div class="col-lg-4 col-md-6 col-12 text-center border-bottom border-light">
+            <img src="images/box-ico-3.png" alt="" class="mb-4">
+            <h4 class="h2 title__color mb-4 primary-font">Child Support</h4>
+            <p class="section__text">Child support is designed to allow a child to enjoy a standard of living that is
+              approximate to what he or she would have enjoyed had the parents lived together.</p>
+            <img src="images/rounded-r-arrow.png" alt="">
+          </div>
+
+          <!-- Single Practice Area -4 -->
+          <div class="col-lg-4 col-md-6 col-12 text-center border-end border-light">
+            <img src="images/box-ico-4.png" alt="" class="mb-4">
+            <h4 class="h2 title__color mb-4 primary-font">Education Law</h4>
+            <p class="section__text">Education law is a set of rules and regulations that guide the workings of an
+              education system. Education law may deal with the creation and funding of schools and school policy.</p>
+            <img src="images/rounded-r-arrow.png" alt="">
+          </div>
+
+          <!-- Single Practice Area -5 -->
+          <div class="col-lg-4 col-md-6 col-12 text-center border-end border-light">
+            <img src="images/box-ico-5.png" alt="" class="mb-4">
+            <h4 class="h2 title__color mb-4 primary-font">Divorce Law</h4>
+            <p class="section__text">The Divorce Act is the federal Act that governs divorce in Canada. The Constitution
+              of Canada gives the federal Parliament exclusive jurisdiction to regulate the law of marriage and divorce.
+            </p>
+            <img src="images/rounded-r-arrow.png" alt="">
+          </div>
+
+          <!-- Single Practice Area -6 -->
+          <div class="col-lg-4 col-md-6 col-12 text-center border-light">
+            <img src="images/box-ico-6.png" alt="" class="mb-4">
+            <h4 class="h2 title__color mb-4 primary-font">Tax Law</h4>
+            <p class="section__text">Tax law or revenue law is an area of legal study in which public or sanctioned
+              authorities, such as federal, state and municipal governments use a body of rules and procedures to assess
+              and collect taxes in a legal context.</p>
+            <img src="images/rounded-r-arrow.png" alt="">
+          </div>
+
+        </div>
+
       </div>
+    </section>
 
-      <!-- Practice Area section -->
-      <div class="practice-area__wrapper row">
+    <!-- Practice Area Ends -->
 
-        <!-- Single Practice Area -1  -->
-        <div class="col-4 text-center border-bottom border-end border-light">
-          <img src="images/box-ico-1.png" alt="" class="mb-4">
-          <h4 class="h2 title__color mb-4 primary-font">Business Law</h4>
-          <p class="section__text">Every business, whether a start-up, or established business is going to need legal
-            advice at some stage. So you’re going to need specialist business lawyers you can trust. </p>
-          <img src="images/rounded-r-arrow.png" alt="">
+
+    <!-- Testimonial Section Starts -->
+
+    <section class="mt__120">
+      <div class="container-lg">
+
+        <!-- Section Intro -->
+        <div class="intro mx-auto text-center mb-5">
+          <h2 class="section__title mb-4">What Our Client Say</h2>
+          <p class="section__text mb-3">We pride ourselves on providing an exceptional service to our clients, but you
+            don’t just have to take our word for it. Read what our clients say about working with us.</p>
         </div>
 
-        <!-- Single Practice Area -2 -->
-        <div class="col-4 text-center bg__gradient border-bottom border-end border-light">
-          <img src="images/box-ico-2.png" alt="" class="mb-4">
-          <h4 class="h2 title__color mb-4 primary-font">Criminal Law</h4>
-          <p class="section__text">Criminal law is the body of law that relates to crime. It prescribes conduct
-            perceived as threatening, harmful, or otherwise endangering to the property, health, safety.</p>
-          <img src="images/rounded-r-arrow.png" alt="">
+
+        <!-- Review Section -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner rounded-3">
+
+            <!-- Carousel Item - 1 -->
+            <div class="carousel-item review review-1 active text-center">
+              <img src="images/client-1.png" alt="" class="mb-4">
+              <h3 class="h4 primary-font text-white fw-bold mb-1">Awlad Hossain</h3>
+              <p class="section__text text-white mb-4">UIX Designer</p>
+              <p class="section__text text-white">I found the service provided professional, informative and friendly. I
+                particularly appreciated how speedily you dealt with everything and your succinct emails and letters,
+                free
+                from unnecessary legal verbiage. You also provided just the right amount of sympathy whilst remaining
+                appropriately business-like. The whole process was made incredibly easy thanks to the service you
+                provided.</p>
+            </div>
+
+            <!-- Carousel Item - 2 -->
+            <div class="carousel-item review review-2 text-center">
+              <img src="images/client-1.png" alt="" class="mb-4">
+              <h3 class="h4 primary-font text-white fw-bold mb-1">Robert S. Dempsey</h3>
+              <p class="section__text text-white mb-4">Blockchain Developer</p>
+              <p class="section__text text-white">I found the service provided professional, informative and friendly. I
+                particularly appreciated how speedily you dealt with everything and your succinct emails and letters,
+                free
+                from unnecessary legal verbiage. You also provided just the right amount of sympathy whilst remaining
+                appropriately business-like. The whole process was made incredibly easy thanks to the service you
+                provided.</p>
+            </div>
+
+            <!-- Carousel Item - 3 -->
+            <div class="carousel-item review review-3 text-center">
+              <img src="images/client-1.png" alt="" class="mb-4">
+              <h3 class="h4 primary-font text-white fw-bold mb-1">Billy A. Smith</h3>
+              <p class="section__text text-white mb-4">Software Developer</p>
+              <p class="section__text text-white">I found the service provided professional, informative and friendly. I
+                particularly appreciated how speedily you dealt with everything and your succinct emails and letters,
+                free
+                from unnecessary legal verbiage. You also provided just the right amount of sympathy whilst remaining
+                appropriately business-like. The whole process was made incredibly easy thanks to the service you
+                provided.</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
-        <!-- Single Practice Area -3 -->
-        <div class="col-4 text-center border-bottom border-light">
-          <img src="images/box-ico-3.png" alt="" class="mb-4">
-          <h4 class="h2 title__color mb-4 primary-font">Child Support</h4>
-          <p class="section__text">Child support is designed to allow a child to enjoy a standard of living that is
-            approximate to what he or she would have enjoyed had the parents lived together.</p>
-          <img src="images/rounded-r-arrow.png" alt="">
+
+
+      </div>
+    </section>
+
+    <!-- Testimonial Section Ends -->
+
+
+
+    <!-- FAQ Section Starts -->
+
+    <section class="mt__120">
+      <div class="container-lg">
+
+        <!-- Section Intro -->
+        <div class="intro mx-auto text-center mb-5">
+          <h2 class="section__title mb-4">Frequently Asked Any Questions</h2>
+          <p class="section__text mb-3">Here are some commonly asked questions and answers about us and our working
+            process. It might help you to make a decision</p>
         </div>
 
-        <!-- Single Practice Area -4 -->
-        <div class="col-4 text-center border-end border-light">
-          <img src="images/box-ico-4.png" alt="" class="mb-4">
-          <h4 class="h2 title__color mb-4 primary-font">Education Law</h4>
-          <p class="section__text">Education law is a set of rules and regulations that guide the workings of an
-            education system. Education law may deal with the creation and funding of schools and school policy.</p>
-          <img src="images/rounded-r-arrow.png" alt="">
+        <!-- Faq Section Wrapper -->
+        <div class="row gap-3 gap-lg-0">
+
+          <!-- Faq Accordion -->
+          <div class="col-lg-6 col-12 d-flex align-items-center order-2 order-lg-1">
+            <div class="accordion" id="accordionExample">
+
+              <!-- FAQ - 1 -->
+              <div class="accordion-item faq mb-4">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button primary-font faq__title" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ - 2 -->
+              <div class="accordion-item faq mb-4">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed primary-font faq__title" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ - 3 -->
+              <div class="accordion-item faq mb-4">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed primary-font faq__title" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsam
+                      mollitia tempora necessitatibus corporis. Laboriosam veniam vitae voluptatem est, ipsa suscipit ad
+                      amet minima ratione distinctio? Maiores iusto deleniti at!</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ - 4 -->
+              <div class="accordion-item faq mb-4">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed primary-font faq__title" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                    aria-controls="collapseFour">
+                    Accordion Item #4
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsam
+                      mollitia tempora necessitatibus corporis. Laboriosam veniam vitae voluptatem est, ipsa suscipit ad
+                      amet minima ratione distinctio? Maiores iusto deleniti at!</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Faq Image -->
+          <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center order-1 order-lg-2">
+            <img src="images/faq.png" alt="" class="img-fluid d-inline-block">
+          </div>
+
         </div>
 
-        <!-- Single Practice Area -5 -->
-        <div class="col-4 text-center border-end border-light">
-          <img src="images/box-ico-5.png" alt="" class="mb-4">
-          <h4 class="h2 title__color mb-4 primary-font">Divorce Law</h4>
-          <p class="section__text">The Divorce Act is the federal Act that governs divorce in Canada. The Constitution
-            of Canada gives the federal Parliament exclusive jurisdiction to regulate the law of marriage and divorce.
+
+      </div>
+    </section>
+
+    <!-- FAQ Section Ends -->
+
+
+    <!-- Contact us Section Starts -->
+
+    <section class="mt__120">
+      <div class="container-lg">
+
+        <!-- Section Intro -->
+        <div class="intro mx-auto text-center mb-5">
+          <h2 class="section__title mb-4">Contact With Us</h2>
+          <p class="section__text mb-3">Want to get in touch? We'd love to hear from you. Here's how you can reach us...
           </p>
-          <img src="images/rounded-r-arrow.png" alt="">
         </div>
 
-        <!-- Single Practice Area -6 -->
-        <div class="col-4 text-center border-light">
-          <img src="images/box-ico-6.png" alt="" class="mb-4">
-          <h4 class="h2 title__color mb-4 primary-font">Tax Law</h4>
-          <p class="section__text">Tax law or revenue law is an area of legal study in which public or sanctioned
-            authorities, such as federal, state and municipal governments use a body of rules and procedures to assess
-            and collect taxes in a legal context.</p>
-          <img src="images/rounded-r-arrow.png" alt="">
-        </div>
+        <!-- Contact Details Section -->
+        <div class="row g-4">
 
-      </div>
+          <!-- Contact Info -->
+          <div class="col-lg-6 col-12 d-flex ">
 
-    </div>
-  </section>
-
-  <!-- Practice Area Ends -->
-
-
-  <!-- Testimonial Section Starts -->
-
-  <section class="mt__120">
-    <div class="container-lg">
-
-      <!-- Section Intro -->
-      <div class="intro mx-auto text-center mb-5">
-        <h2 class="section__title mb-4">What Our Client Say</h2>
-        <p class="section__text mb-3">We pride ourselves on providing an exceptional service to our clients, but you
-          don’t just have to take our word for it. Read what our clients say about working with us.</p>
-      </div>
-
-
-      <!-- Review Section -->
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner rounded-3">
-
-          <!-- Carousel Item - 1 -->
-          <div class="carousel-item review review-1 active text-center">
-            <img src="images/client-1.png" alt="" class="mb-4">
-            <h3 class="h4 primary-font text-white fw-bold mb-1">Awlad Hossain</h3>
-            <p class="section__text text-white mb-4">UIX Designer</p>
-            <p class="section__text text-white">I found the service provided professional, informative and friendly. I
-              particularly appreciated how speedily you dealt with everything and your succinct emails and letters, free
-              from unnecessary legal verbiage. You also provided just the right amount of sympathy whilst remaining
-              appropriately business-like. The whole process was made incredibly easy thanks to the service you
-              provided.</p>
-          </div>
-
-          <!-- Carousel Item - 2 -->
-          <div class="carousel-item review review-2 text-center">
-            <img src="images/client-1.png" alt="" class="mb-4">
-            <h3 class="h4 primary-font text-white fw-bold mb-1">Robert S. Dempsey</h3>
-            <p class="section__text text-white mb-4">Blockchain Developer</p>
-            <p class="section__text text-white">I found the service provided professional, informative and friendly. I
-              particularly appreciated how speedily you dealt with everything and your succinct emails and letters, free
-              from unnecessary legal verbiage. You also provided just the right amount of sympathy whilst remaining
-              appropriately business-like. The whole process was made incredibly easy thanks to the service you
-              provided.</p>
-          </div>
-
-          <!-- Carousel Item - 3 -->
-          <div class="carousel-item review review-3 text-center">
-            <img src="images/client-1.png" alt="" class="mb-4">
-            <h3 class="h4 primary-font text-white fw-bold mb-1">Billy A. Smith</h3>
-            <p class="section__text text-white mb-4">Software Developer</p>
-            <p class="section__text text-white">I found the service provided professional, informative and friendly. I
-              particularly appreciated how speedily you dealt with everything and your succinct emails and letters, free
-              from unnecessary legal verbiage. You also provided just the right amount of sympathy whilst remaining
-              appropriately business-like. The whole process was made incredibly easy thanks to the service you
-              provided.</p>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-
-
-    </div>
-  </section>
-
-  <!-- Testimonial Section Ends -->
-
-
-
-  <!-- FAQ Section Starts -->
-
-  <section class="mt__120">
-    <div class="container-lg">
-
-      <!-- Section Intro -->
-      <div class="intro mx-auto text-center mb-5">
-        <h2 class="section__title mb-4">Frequently Asked Any Questions</h2>
-        <p class="section__text mb-3">Here are some commonly asked questions and answers about us and our working
-          process. It might help you to make a decision</p>
-      </div>
-
-      <!-- Faq Section Wrapper -->
-      <div class="row">
-
-        <!-- Faq Accordion -->
-        <div class="col-6 fles align-items-center">
-          <div class="accordion" id="accordionExample">
-
-            <!-- FAQ - 1 -->
-            <div class="accordion-item faq mb-4">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button primary-font faq__title" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+            <div class="row">
+              <!-- Address -->
+              <div
+                class="contact__info__box text-center col-6 border-bottom border-end d-flex flex-column justify-content-center align-items-center">
+                <img src="images/location.png" alt="" class="mb-3">
+                <h4 class="h4 primary-font title__color fw-bold mb-3">Address</h4>
+                <p class="section__text">A108 Adam Street,
+                  New York, NY 535022</p>
               </div>
-            </div>
 
-            <!-- FAQ - 2 -->
-            <div class="accordion-item faq mb-4">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed primary-font faq__title" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                  aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+              <!-- Phone Number -->
+              <div
+                class="contact__info__box text-center col-6 border-bottom d-flex flex-column justify-content-center align-items-center">
+                <img src="images/location.png" alt="" class="mb-3">
+                <h4 class="h4 primary-font title__color fw-bold mb-3">Call Us</h4>
+                <p class="section__text">+88 01750 00 00 00
+                  +88 01750 00 00 00</p>
               </div>
-            </div>
 
-            <!-- FAQ - 3 -->
-            <div class="accordion-item faq mb-4">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed primary-font faq__title" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                  aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsam
-                    mollitia tempora necessitatibus corporis. Laboriosam veniam vitae voluptatem est, ipsa suscipit ad
-                    amet minima ratione distinctio? Maiores iusto deleniti at!</p>
-                </div>
+              <!-- Email -->
+              <div
+                class="contact__info__box text-center col-6 border-end d-flex flex-column justify-content-center align-items-center">
+                <img src="images/location.png" alt="" class="mb-3">
+                <h4 class="h4 primary-font title__color fw-bold mb-3">Email Us</h4>
+                <p class="section__text">info@gmail.com
+                  info@gmail.com</p>
               </div>
-            </div>
 
-            <!-- FAQ - 4 -->
-            <div class="accordion-item faq mb-4">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed primary-font faq__title" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-                  aria-controls="collapseFour">
-                  Accordion Item #4
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsam
-                    mollitia tempora necessitatibus corporis. Laboriosam veniam vitae voluptatem est, ipsa suscipit ad
-                    amet minima ratione distinctio? Maiores iusto deleniti at!</p>
-                </div>
+              <!-- Working Hours -->
+              <div
+                class="contact__info__box text-center col-6 d-flex flex-column justify-content-center align-items-center">
+                <img src="images/location.png" alt="" class="mb-3">
+                <h4 class="h4 primary-font title__color fw-bold mb-3">Working Hours</h4>
+                <p class="section__text">Mon-Fri: 9AM to 5PM
+                  Sunday: 9AM to 1 PM</p>
               </div>
             </div>
 
           </div>
 
-        </div>
+          <!-- Contact Form -->
+          <div class="col-lg-6 col-12">
 
-        <!-- Faq Image -->
-        <div class="col-6">
-          <img src="images/faq.png" alt="">
-        </div>
+            <form action="#" class="contact_form">
+              <input type="text" class="form-control form-control-lg mb-4 section__text p-4" placeholder="Your Name">
+              <input type="email" class="form-control form-control-lg mb-4 section__text p-4" placeholder="Your Email">
+              <input type="text" class="form-control form-control-lg mb-4 section__text p-4" placeholder="Subject">
 
+              <textarea class="form-control section__text p-4 mb-4" id="exampleFormControlTextarea1"
+                rows="10">Your Message</textarea>
+              <button type="submit" class="btn py-3 px-5 text-white fw-semibold btn--primary-color d-block w-100">Send
+                Message</button>
+          </div>
+
+        </div>
       </div>
 
-
-    </div>
-  </section>
-
-  <!-- FAQ Section Ends -->
-
-
-  <!-- Contact us Section Starts -->
-
-  <section class="mt__120">
-    <div class="container-lg">
-
-      <!-- Section Intro -->
-      <div class="intro mx-auto text-center mb-5">
-        <h2 class="section__title mb-4">Contact With Us</h2>
-        <p class="section__text mb-3">Want to get in touch? We'd love to hear from you. Here's how you can reach us...
-        </p>
       </div>
+    </section>
 
-      <!-- Contact Details Section -->
-      <div class="row gap-4">
+    <!-- Contact us Section Ends -->
+  </main>
 
-        <!-- Contact Info -->
-        <div class="col-6 row">
-
-          <!-- Address -->
-          <div
-            class="contact__info__box text-center col-6 border-bottom border-end d-flex flex-column justify-content-center align-items-center">
-            <img src="images/location.png" alt="" class="mb-3">
-            <h4 class="h4 primary-font title__color fw-bold mb-3">Address</h4>
-            <p class="section__text">A108 Adam Street,
-              New York, NY 535022</p>
-          </div>
-
-          <!-- Phone Number -->
-          <div
-            class="contact__info__box text-center col-6 border-bottom d-flex flex-column justify-content-center align-items-center">
-            <img src="images/location.png" alt="" class="mb-3">
-            <h4 class="h4 primary-font title__color fw-bold mb-3">Call Us</h4>
-            <p class="section__text">+88 01750 00 00 00
-              +88 01750 00 00 00</p>
-          </div>
-
-          <!-- Email -->
-          <div
-            class="contact__info__box text-center col-6 border-end d-flex flex-column justify-content-center align-items-center">
-            <img src="images/location.png" alt="" class="mb-3">
-            <h4 class="h4 primary-font title__color fw-bold mb-3">Email Us</h4>
-            <p class="section__text">info@gmail.com
-              info@gmail.com</p>
-          </div>
-
-          <!-- Working Hours -->
-          <div
-            class="contact__info__box text-center col-6 d-flex flex-column justify-content-center align-items-center">
-            <img src="images/location.png" alt="" class="mb-3">
-            <h4 class="h4 primary-font title__color fw-bold mb-3">Working Hours</h4>
-            <p class="section__text">Mon-Fri: 9AM to 5PM
-              Sunday: 9AM to 1 PM</p>
-          </div>
-
-        </div>
-
-        <!-- Contact Form -->
-        <div class="col-6">
-
-          <form action="#" class="contact_form">
-            <input type="text" class="form-control form-control-lg mb-4 section__text p-4" placeholder="Your Name">
-            <input type="email" class="form-control form-control-lg mb-4 section__text p-4" placeholder="Your Email">
-            <input type="text" class="form-control form-control-lg mb-4 section__text p-4" placeholder="Subject">
-
-            <textarea class="form-control section__text p-4 mb-4" id="exampleFormControlTextarea1"
-              rows="10">Your Message</textarea>
-            <button type="submit" class="btn py-3 px-5 text-white fw-semibold btn--primary-color d-block w-100">Send
-              Message</button>
-        </div>
-
-      </div>
-    </div>
-
-    </div>
-  </section>
-
-  <!-- Contact us Section Ends -->
+  <!-- Main Area Ends -->
 
 
   <!-- Footer Starts -->
 
   <footer class="mt__120 bg-black">
     <div class="container-lg">
-      <div class="row">
+      <div class="row g-md-5 g-4">
 
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-12">
           <img src="images/site_logo_white.png" alt="" class="mb-4">
-          <p class="section__text">We Provide Effective Legal Solutions. At Justice Legal Solutions, our aim is to help you achieve the best possible outcome to ensure your family, your future and your assets are protected.</p>
+          <p class="section__text">We Provide Effective Legal Solutions. At Justice Legal Solutions, our aim is to help
+            you achieve the best possible outcome to ensure your family, your future and your assets are protected.</p>
         </div>
 
-        <div class="col-3 ps-5">
+        <div class="col-lg-3 col-md-6 col-12">
           <h4 class="h4 primary-font text-white fw-bold mb-5">Usefull Link</h4>
-          
+
           <ul class="section__text list-unstyled">
             <li>Homes</li>
             <li>About Us</li>
@@ -495,9 +538,9 @@
             <li>Contact Us</li>
           </ul>
         </div>
-        
-        <div class="col-3">
-          
+
+        <div class="col-lg-3 col-md-6 col-12">
+
           <h4 class="h4 primary-font text-white fw-bold mb-5">Usefull Link</h4>
 
           <p class="section__text mb-3">555 4th 5t NW, Washington<br> DC 20530, United States</p>
@@ -506,17 +549,19 @@
 
         </div>
 
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-12">
 
           <h4 class="h4 primary-font text-white fw-bold mb-5">Subscribe</h4>
           <p class="section__text mb-3">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
 
           <form>
             <div class="input-group">
-              <input type="email" class="form-control py-3 px-4 d-inline-block rounded-top-2 rounded-start-2 rounded-end-0 rounded-bottom-0"
+              <input type="email"
+                class="form-control py-3 px-4 d-inline-block rounded-top-2 rounded-start-2 rounded-end-0 rounded-bottom-0"
                 placeholder="Email Address">
               <span class="input-group-btn">
-                <button class="btn py-3 px-3 text-white fw-semibold btn--primary-color d-inline-block rounded-start-0 rounded-top-0 rounded-end-2 rounded-bottom-2"
+                <button
+                  class="btn py-3 px-3 text-white fw-semibold btn--primary-color d-inline-block rounded-start-0 rounded-top-0 rounded-end-2 rounded-bottom-2"
                   type="submit"><img src="images/send-ico.png" alt=""></button>
               </span>
             </div>

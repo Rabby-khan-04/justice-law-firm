@@ -19,7 +19,6 @@
 
 * {
     font-family: var(--secondary-font);
-    box-sizing: border-box;
 }
 
 img {
@@ -136,7 +135,7 @@ img {
 }
 
 .accordion-button[aria-expanded="true"],
-.faq .accordion-button, 
+.faq .accordion-button,
 .faq .accordion-body {
     background: #F3F3F3 !important;
     outline: none !important;
@@ -152,12 +151,12 @@ img {
 
 /* Contact Section Style Starts */
 
-.contact__info__box{
+.contact__info__box {
     padding: 65px;
     background-color: #F3F3F3;
 }
 
-.contact_form .form-control{
+.contact_form .form-control {
     background-color: #F3F3F3;
     border: none;
 }
@@ -168,8 +167,68 @@ img {
 
 /* Footer Style Starts */
 
-footer{
+footer {
     padding: 120px 0;
 }
 
 /* Footer Style End */
+
+
+
+
+
+
+/* ! Responsive CSS */
+
+@media all and (max-width: 1200px) {
+    .contact__info__box {
+        padding: 30px;
+    }
+}
+@media all and (max-width: 990px) {
+    .mt__120 {
+        margin-top: 80px;
+    }
+
+    .review {
+        padding: 60px;
+    }
+
+    footer {
+        padding: 80px 0;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .mt__120 {
+        margin-top: 60px;
+    }
+
+    footer {
+        padding: 60px 0;
+    }
+}
+
+
+@media all and (max-width: 576px) {
+    .section__title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .banner .banner__wrapper {
+        padding: 75px 0;
+    }
+
+    .practice-area__wrapper > div {
+        padding: 30px;
+    }
+
+    .review {
+        padding: 30px;
+    }
+
+    .contact__info__box {
+        padding: 20px;
+    }
+}
